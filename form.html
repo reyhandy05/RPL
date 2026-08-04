@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FORM</title>
+    <style>
+        /* Menghilangkan panah atas/bawah pada input type number */
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+        }
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><label>Nama Siswa</label></td>
+                <td>:</td>
+                <td><input type="text" required placeholder="Masukkan Nama"></td>
+            </tr>
+            <tr>
+                <td><label>No HP</label></td>
+                <td>:</td>
+                <td><input type="number" required></td>
+            </tr>
+            <tr>
+                <td><label>Email</label></td>
+                <td>:</td>
+                <td><input type="email" required></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td>:</td>
+                <td><input type="password" required></td>
+            </tr>
+            <tr>
+                <td valign="top"><label>Alamat</label></td>
+                <td valign="top">:</td>
+                <td><textarea required></textarea></td>
+            </tr>
+            <tr>
+                <td><label>Jenis Kelamin</label></td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="jeniskelamin" required>Laki-laki
+                    <input type="radio" name="jeniskelamin">Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td valign="top"><label>Makanan Favorit</label></td>
+                <td valign="top">:</td>
+                <td>
+                    <input type="checkbox" name="makanan" required>Steak wagyu<br>
+                    <input type="checkbox" name="makanan">Soto<br>
+                    <input type="checkbox" name="makanan">Pangsit<br>
+                    <input type="checkbox" name="makanan">Seblak<br>
+                    <input type="checkbox" name="makanan">Bakso
+                </td>
+            </tr>
+            <tr>
+                <td><label>Tanggal Lahir</label></td>
+                <td>:</td>
+                <td><input type="date" required></td>
+            </tr>
+            <tr>
+                <td><label>Jurusan</label></td>
+                <td>:</td>
+                <td>
+                    <select name="jurusan" required>
+                        <option value="">Pilih</option>
+                        <option value="TKJ">TKJ</option>
+                        <option value="rpl">RPL</option>
+                        <option value="pg">PG</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Upload Foto Diri</label></td>
+                <td>:</td>
+                <td><input type="file" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <br>
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
