@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333333;
+}
+
+h1 {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.tagline {
+  text-align: center;
+  color: gray;
+}
+
+h1, h2 {
+  letter-spacing: 1px;
+}
+
+h2 {
+  color: #d35400;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 6px;
+}
+
+.kontainer-menu {
+  width: 450px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 24px;
+  border: 1px solid #ddd;
+}
+
+.daftar-menu li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px dashed #eee;
+  cursor: pointer;
+}
+
+.daftar-menu li:hover {
+  background-color: #fcf3cf;
+  color: #b7950b;
+}
+
+.daftar-menu strong {
+  color: #27ae60;
+}
